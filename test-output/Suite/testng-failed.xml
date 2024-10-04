@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.amazon.extentreportutilis.ListenerClass"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.amazon.tests.AddToCartTest">
+        <methods>
+          <include name="setupBrowser"/>
+          <include name="addProductToCartTest"/>
+          <include name="teardownBrowser"/>
+        </methods>
+      </class> <!-- com.amazon.tests.AddToCartTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
